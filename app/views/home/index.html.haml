@@ -1,0 +1,78 @@
+#home
+  .container
+    .edgy
+      = image_tag('b.png')
+      .text 
+        .web web development
+        .mobile mobile app development
+        .consulting consulting
+
+#development
+  .container
+    %h1.title Web & Mobile App Development
+    .title-line-separator 
+    .row
+      .span6
+        %ul
+          %li 
+            Web Development
+            %ul
+              %li Ruby on Rails
+              %li Wordpress
+              %li Joomla
+          %li 
+            Mobile App Development
+            %ul
+              %li IOS
+              %li Android
+      .span6
+        = image_tag('apps.png')
+
+#marketing
+  .container
+    %h1.title Marketing
+    .title-line-separator 
+    .row
+      = image_tag('marketing.png')
+
+
+#consulting
+  .container
+    %h1.title Consulting
+    .title-line-separator 
+    .row
+      = image_tag('consulting.png')
+
+#portfolio
+  .container
+    %h1.title Portfolio
+    .title-line-separator 
+    .row
+      %ul
+        %li ZipaClip
+        %li Jenco
+        %li AZ Scream Park
+        %li Phil Smith Designs
+        %li XSP
+        %li Homewell Scottsdale
+
+#contact
+  .container
+    %h1.title Contact Us
+    .title-line-separator 
+    .row
+      .span6
+        = render 'message/form'
+      .span6
+        .row
+          .span3.offset3
+            %p
+              7469 E Monte Christo
+              %br
+              Scottsdale, AZ 85260
+            %p
+              602-882-5955
+        .row
+          = image_tag('edgy-mirror.png')
+
+        

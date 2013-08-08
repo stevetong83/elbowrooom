@@ -1,0 +1,126 @@
+$menu-height: 100px
+$menu-set: 150px
+$red: #d82546
+$blue: #273c67
+$yellow: #feab58
+$orange: #f27537
+$green: #baba32
+$black: #000
+$white: #fff
+
+body
+  padding: 0
+  margin: 0
+
+input[type=text]
+  width: 100%
+  padding: 10px
+  margin-bottom: 15px
+
+textarea
+  width: 100%
+  padding: 10px
+  margin-bottom: 5px
+
+
+.menu
+  position: fixed
+  top: 0
+  left: 50%
+  z-index: 10
+  margin-left: -610px
+  height: $menu-height
+  background-color: #444
+  padding: 0 25px 10px 25px
+  border-bottom-left-radius: 10px
+  border-bottom-right-radius: 10px
+  box-shadow: 8px 8px 15px rgba(50, 50, 50, 0.5)
+  -moz-box-shadow: 8px 8px 15px rgba(50, 50, 50, 0.5)
+  -webkit-box-shadow: 8px 8px 15px rgba(50, 50, 50, 0.5)
+  #logo
+    float: left
+    line-height: $menu-height
+  #nav
+    float: right
+    li 
+      float: left
+      list-style-type: none
+      margin-left: 25px
+      line-height: $menu-height
+      a
+        color: #fff 
+        font-size: 1.3em
+        text-decoration: none
+        &:hover
+          color: red !important
+
+#home, #development, #marketing, #consulting, #portfolio, #contact
+  padding-top: $menu-set
+  width: 100%
+  min-height: 700px
+  padding-bottom: 50px
+
+.title 
+  font-size: 50px
+  font-weight: 700
+  text-transform: lowercase
+  background-image: url("icon_plus.png")
+  background-repeat: no-repeat
+  line-height: 40px
+  padding-left: 50px
+  font-family: 'Source Sans Pro', sans-serif
+  letter-spacing: -3px
+  display: inline-block
+
+.title-line-separator 
+  background-image: url("line.png")
+  background-repeat: repeat-x
+  height: 30px
+  margin: 25px 0
+  width: 100%
+
+#home
+  background-image: url('background.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  .edgy
+    position: relative
+    width: 1000px
+    margin: -40px auto 0 auto
+    .text 
+      position: absolute
+      top: 40px
+      left: 320px
+      color: #fff
+      font-size: 3.0em
+      font-weight: bold
+      .web, .mobile, .consulting
+        display: none
+
+#development
+  background-color: $red
+  color: #fff
+
+#marketing
+  background-color: $blue
+  color: #fff
+
+#consulting
+  background-color: $orange
+  color: #fff
+
+#portfolio
+  background-color: $green
+  color: #fff
+
+#contact
+  background-color: $black
+  color: #fff
+
+#footer
+  line-height: 50px
+  width: 100%
+  background-color: $white
+  text-align: center
+  color: $red
+
