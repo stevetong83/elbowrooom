@@ -8,9 +8,11 @@ $green: #baba32
 $black: #000
 $white: #fff
 
-body
+html, body
   padding: 0
   margin: 0
+  height: 100%
+
 
 input[type=text]
   width: 100%
@@ -22,25 +24,24 @@ textarea
   padding: 10px
   margin-bottom: 5px
 
-
 .menu
   position: fixed
   top: 0
-  left: 50%
-  z-index: 10
-  margin-left: -610px
+  left: 0
+  width: 100%
+  z-index: 1000
   height: $menu-height
   background-color: #444
   padding: 0 25px 10px 25px
-  border-bottom-left-radius: 10px
-  border-bottom-right-radius: 10px
   box-shadow: 8px 8px 15px rgba(50, 50, 50, 0.5)
   -moz-box-shadow: 8px 8px 15px rgba(50, 50, 50, 0.5)
   -webkit-box-shadow: 8px 8px 15px rgba(50, 50, 50, 0.5)
   #logo
     float: left
     line-height: $menu-height
+    margin-left: 25px
   #nav
+    margin-right: 50px
     float: right
     li 
       float: left
@@ -55,9 +56,9 @@ textarea
           color: red !important
 
 #home, #development, #marketing, #consulting, #portfolio, #contact
-  padding-top: $menu-set
+  padding-top: 125px
   width: 100%
-  min-height: 700px
+  min-height: 800px
   padding-bottom: 50px
 
 .title 
@@ -80,13 +81,14 @@ textarea
   width: 100%
 
 #home
-  background-image: url('background.jpg')
-  background-repeat: no-repeat
-  background-size: cover
+  // background-image: url('background.jpg')
+  // background-repeat: no-repeat
+  // background-size: cover
+  background-color: #ccc
   .edgy
     position: relative
     width: 1000px
-    margin: -40px auto 0 auto
+    margin: -15px auto 0 auto
     .text 
       position: absolute
       top: 40px
@@ -98,15 +100,15 @@ textarea
         display: none
 
 #development
-  background-color: $red
-  color: #fff
-
-#marketing
   background-color: $blue
   color: #fff
 
-#consulting
+#marketing
   background-color: $orange
+  color: #fff
+
+#consulting
+  background-color: $yellow
   color: #fff
 
 #portfolio

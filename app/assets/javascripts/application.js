@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+
+(function($) {
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(e){ 
+            e.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+        });
+    });
+})(jQuery);
