@@ -12,6 +12,8 @@
     .title-line-separator 
     .row
       .span6
+        %p
+          With clean brand messaging across all your devices including: computers, smartphones, and tablets.  Engaging customers more often and with greater sales qualifications for your products, services, and ideas through revenue producing websites, mobile applications for iOS and Android, social media networks, software, e-mails, and more.
         %ul
           %li 
             Web Development
@@ -25,13 +27,20 @@
               %li IOS
               %li Android
       .span6
-        = image_tag('apps.png')
+        .pull-right
+          = image_tag('apps.png')
 #marketing
   .container
     %h1.title Marketing
     .title-line-separator 
     .row
-      = image_tag('marketing.png')
+      .span6
+        = image_tag('marketing.png')
+      .span5
+        %p
+          We use online advertising to promote products, services, and ideas on the internet.
+        %p
+          With brand and identity congruent across all online destinations, one of your greatest assets (brand) drives more business.  Increase shareholder value, profits, and reduce overhead by cleaning up your brand.  Increase customer trust and sales velocity.  Designs, logos, aesthetics, naming, terms, or anything that differentiates your product, services or idea from its competition.  Invention of new ideas to incorporate your brand, and management of existing ones.
 
 #consulting
   .container
@@ -39,18 +48,29 @@
     .title-line-separator 
     .row
       = image_tag('consulting.png')
+
 #portfolio
   .container
     %h1.title Portfolio
     .title-line-separator 
     .row
-      %ul
-        %li ZipaClip
-        %li Jenco
-        %li AZ Scream Park
-        %li Phil Smith Designs
-        %li XSP
-        %li Homewell Scottsdale
+      .span3.site
+        %h3 ZipaClip
+        .image
+          = link_to image_tag('rails.png'), asset_path('rails.png')
+      .span3.site
+        %h3 AZ Scream Park
+      .span3.site
+        %h3 Phil Smith Designs
+      .span3.site
+        %h3 XSP
+      .span3.site
+        %h3 Homewell Scottsdale
+      .span3.site
+        %h3 Jenco
+      .span3.site
+        %h3 Adroit
+
 
 #contact
   .container
@@ -62,14 +82,15 @@
       .span6
         .row
           .span3.offset3
-            %p
+            %p.address
               7469 E Monte Christo
               %br
               Scottsdale, AZ 85260
-            %p
+            %p.phone
               602-882-5955
         .row
-          = image_tag('edgy-mirror.png')
+          .span5.offset1
+            = image_tag('edgy-mirror.png')
 
 
 

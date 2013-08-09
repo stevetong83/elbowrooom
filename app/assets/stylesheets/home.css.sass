@@ -17,12 +17,14 @@ html, body
 input[type=text]
   width: 100%
   padding: 10px
-  margin-bottom: 15px
+  margin-bottom: 25px
 
 textarea
   width: 100%
   padding: 10px
-  margin-bottom: 5px
+  margin-bottom: 25px
+
+
 
 .menu
   position: fixed
@@ -53,7 +55,7 @@ textarea
         font-size: 1.3em
         text-decoration: none
         &:hover
-          color: red !important
+          color: $red !important
 
 #home, #development, #marketing, #consulting, #portfolio, #contact
   padding-top: 125px
@@ -81,10 +83,9 @@ textarea
   width: 100%
 
 #home
-  // background-image: url('background.jpg')
-  // background-repeat: no-repeat
-  // background-size: cover
-  background-color: #ccc
+  background-image: url('background.jpg')
+  background-repeat: no-repeat
+  background-size: cover
   .edgy
     position: relative
     width: 1000px
@@ -100,7 +101,7 @@ textarea
         display: none
 
 #development
-  background-color: $blue
+  background-color: $red
   color: #fff
 
 #marketing
@@ -114,10 +115,35 @@ textarea
 #portfolio
   background-color: $green
   color: #fff
+  .site
+    background-color: $white
+    height: 300px
+    border-radius: 10px
+    -moz-border-radius: 10px
+    -webkit-border-radius: 10px
+    color: $black
+    margin-bottom: 30px
+    text-align: center
+    h3
+      font-size: 1.5em
+      letter-spacing: 0px
+      text-align: center
+      max-width: 260px
+    .image 
+      height: 225px
+      background-color: $black
+      max-width: 240px
+      margin: 0 auto
 
 #contact
   background-color: $black
   color: #fff
+  .address
+    font-size: 1.7em
+    line-height: 1.3em
+  .phone
+    font-size: 2.0em
+    margin-top: 25px
 
 #footer
   line-height: 50px

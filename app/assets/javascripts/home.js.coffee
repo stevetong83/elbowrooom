@@ -1,4 +1,9 @@
 $ ->
+
+  $('#nav').scrollspy()
+
+
+
   setInterval ->
 #     var divs = [];
 # $("#main").find('div').each(function() {
