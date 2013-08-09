@@ -47,29 +47,28 @@
     %h1.title Consulting
     .title-line-separator 
     .row
-      = image_tag('consulting.png')
+      %h2 Troy Anderson
+      %p
+        With 20 years of background in both software and real estate development and management, I have a rich set of experiences that provides me with a unique perspective to businesses looking to further their strategic objectives using technology.
+      %p
+        When helping businesses with their technology needs, my approach is to work with them to learn the business case and strategy, and then cooperatively design a technology solution that lowers costs or increases revenues, for the purpose of creating greater enterprise value. While I have a formal education in computer engineering, my business knowledge has been gained through experience.
+      %p
+        During the past two years, I have been studying the philosophies, strategies, and practices of the Aji Network to gain more fundamental knowledge of business. Specialties:Software Development, iOS Development, including iPhone and iPad, Ruby on Rails, PHP/mySQL, Master Planned Real Estate Development and Management
+    .row
+      %h2 Charlie Jackson
+      %p
+        From the beginning, I have had a passion for information and technology. I have always noticed opportunities to use technology to help people in ways that they overlooked. In 2011, I founded Atherpath to build micro niche websites to drive online traffic to specific products and services. 
+      %p
+        We built over 200 websites and helped 6 companies realize increased profitability leveraging my talents. When I met Troy Anderson, he and Sean Hoy were building a unique studio environment to help people with their digital strategy and we immediately saw how our interests, experience and talents all complimented each other, so we founded Elbow Room Studios.
+      %p
+        We develop digital strategies by leveraging our experiences and expertise in business, marketing, branding, web and mobile development and ability to get companies noticed in the digital space. We work with our clients to understand their needs and craft a digital strategy that supports their mission.
 
 #portfolio
   .container
     %h1.title Portfolio
     .title-line-separator 
     .row
-      .span3.site
-        %h3 ZipaClip
-        .image
-          = link_to image_tag('rails.png'), asset_path('rails.png')
-      .span3.site
-        %h3 AZ Scream Park
-      .span3.site
-        %h3 Phil Smith Designs
-      .span3.site
-        %h3 XSP
-      .span3.site
-        %h3 Homewell Scottsdale
-      .span3.site
-        %h3 Jenco
-      .span3.site
-        %h3 Adroit
+      = render "home/portfolio"
 
 
 #contact
