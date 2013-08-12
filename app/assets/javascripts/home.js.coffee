@@ -1,24 +1,6 @@
 $ ->
 
-  $('#nav').scrollspy()
+  $('body').scrollspy({ target: 'nav' })
 
-
-
-  setInterval ->
-#     var divs = [];
-# $("#main").find('div').each(function() {
-#     divs.push(this);
-# }).hide();
-
-# // Show them...
-# var showDiv = function() {
-#     // Don't show them if there are no divs to show
-#     if (divs.length <= 0) return;
-
-#     // shift() pops the front element off of the list.
-#     // We'll fade it in for 500 milliseconds, then repeat
-#     // this process on another div.
-#     $(divs.shift()).fadeIn(500,showDiv);
-# }
-
-# showDiv();
+   
+  $(".text div:first-child").fadeIn().next("div").delay(1000).fadeIn().next("div").delay(2000).fadeIn().next("div").delay(3000).fadeIn()

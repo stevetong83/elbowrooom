@@ -13,7 +13,7 @@ $light-gray: #ccc
 html, body
   padding: 0
   margin: 0
-  height: 100%
+
 
 
 input[type=text]
@@ -34,6 +34,8 @@ textarea
   margin: 0 2%
   width: 96%
 
+
+
 .menu
   position: fixed
   top: 0
@@ -53,17 +55,21 @@ textarea
   #nav
     margin-right: 50px
     float: right
+    .active
+      background-color: $red !important
     li 
       float: left
       list-style-type: none
       margin-left: 25px
       line-height: $menu-height
+
       a
         color: #fff 
         font-size: 1.3em
         text-decoration: none
         &:hover
           color: $red !important
+        
 
 #home, #development, #marketing, #consulting, #portfolio, #contact, #portfolio-page
   padding-top: 125px
@@ -100,13 +106,18 @@ textarea
     margin: -15px auto 0 auto
     .text 
       position: absolute
-      top: 40px
-      left: 320px
+      top: 60px
+      left: 380px
       color: #fff
       font-size: 3.0em
       font-weight: bold
-      .web, .mobile, .consulting
+      line-height: 1.1em
+      .web, .mobile, .consulting, .marketing
         display: none
+        margin-bottom: 40px
+        background-image: url("icon_plus.png")
+        background-repeat: no-repeat
+        padding-left: 60px
 
 #development
   background-color: $red
