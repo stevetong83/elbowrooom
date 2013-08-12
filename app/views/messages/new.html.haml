@@ -1,0 +1,19 @@
+#contact
+  .container
+    %h1.title Contact Us
+    .title-line-separator 
+    .row
+      .span6
+        = render 'messages/form'
+      .span6
+        .row
+          .span3.offset3
+            %p.address
+              7469 E Monte Christo
+              %br
+              Scottsdale, AZ 85260
+            %p.phone
+              602-882-5955
+        .row
+          .span5.offset1
+            = image_tag('edgy-mirror.png')

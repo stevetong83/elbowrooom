@@ -2,14 +2,17 @@
 %html
   %head
     %title Elbowroom
-    = stylesheet_link_tag    "application", :media => "all"
+    = stylesheet_link_tag    "application", media: "all"
     = javascript_include_tag "application"
     = csrf_meta_tags 
   %body
+    .flash
+      = render 'shared/flash_notice'
     .container.menu
       #logo= image_tag('logo.png')
       #nav= render "shared/navbar"
     
+    
     = yield
-  #footer
-    &copy 2013 Elbowroom Studios
+    #footer
+      &copy 2013 Elbowroom Studios

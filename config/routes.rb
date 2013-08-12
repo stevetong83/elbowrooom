@@ -2,7 +2,7 @@ Elbowroom::Application.routes.draw do
 
   root to: 'home#index'
 
-  resources :messages, only: :create
+  resources :messages, only: [:new, :create]
 
 
   get 'portfolio/zipaclip', to: 'portfolio#zipaclip'
